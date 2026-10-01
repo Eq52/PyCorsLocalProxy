@@ -1,4 +1,4 @@
-# CORS 本地代理（Local cors.sh）
+# CORS 本地代理
 
 
 ![界面预览](ui_preview.png)
