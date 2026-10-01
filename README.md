@@ -1,20 +1,24 @@
 # CORS 本地代理（Local cors.sh）
 
-把开源项目 [cors.sh](https://github.com/gridaco/cors.sh) 的核心能力搬到本地：一个**双击即用、零配置、免安装**的本地 CORS 代理工具。双击 EXE 后自动启动代理服务和浏览器测试页，任何被 CORS 拦截的接口，在前面拼上本机代理地址即可正常请求。
 
 ![界面预览](ui_preview.png)
 
 ---
 
-## 一、如何得到 EXE（三步，约 5 分钟）
+## 一、如何得到 EXE（三步，约 1-5 分钟）
 
 > 说明：PyInstaller 不支持跨平台打包，EXE 需要在 Windows 电脑上生成一次。生成后即可拷贝给其他 Windows 电脑双击运行，**无需再装 Python**。
 
+### 第 0 步：直接从Releases下载
+直接下载打包好的[EXE](https://github.com/Eq52/PyCorsLocalProxy/releases/download/v1.0.0/CORS-Local-Proxy.exe)
+
+如果想自己打包请跳转到[下一步](https://github.com/Eq52/PyCorsLocalProxy/tree/main#第-1-步安装-python)
+
 ### 第 1 步：安装 Python
 
-1. 打开 <https://www.python.org/downloads/>，下载 Python 3.9 ~ 3.13 任一版本。
-2. 安装时**务必勾选** `Add python.exe to PATH`。
-3. 验证：按 `Win + R` 输入 `cmd` 回车，在黑窗口输入 `python --version`，能显示版本号即可。
+1. 打开<https://www.python.org/downloads/>，下载 Python 3.9 ~ 3.13 任一版本。
+3. 安装时**务必勾选** `Add python.exe to PATH`。
+4. 验证：按 `Win + R` 输入 `cmd` 回车，在黑窗口输入 `python --version`，能显示版本号即可。
 
 > ⚠️ 不要用 Microsoft Store 版 Python（打包常有兼容问题），请用 python.org 的安装包。
 
@@ -149,6 +153,5 @@ cors-local-proxy/
 
 ## 六、声明
 
-- 本工具是 [gridaco/cors.sh](https://github.com/gridaco/cors.sh) 思想的本地化实现，仅供**开发与调试**使用。
 - 通过代理访问第三方服务时，请遵守目标网站的服务条款与当地法律法规；请勿用于生产环境——给"自己的服务器"解决跨域，正确做法是在服务端直接返回 CORS 头。
 - 代码 MIT 协议，可自由修改与分发。
